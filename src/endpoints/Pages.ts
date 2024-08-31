@@ -27,7 +27,7 @@ export class PagesAPI {
    * @returns
    */
   public async get(slug: string): Promise<Page> {
-    const response = await this.api.get(`/pages/slug?=${slug}`);
+    const response = await this.api.get(`/pages/slug?slug=${slug}`);
     return response.data;
   }
 }
