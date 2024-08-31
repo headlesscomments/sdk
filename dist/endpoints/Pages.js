@@ -35,7 +35,7 @@ class PagesAPI {
      */
     get(slug) {
         return __awaiter(this, void 0, void 0, function* () {
-            const response = yield this.api.get(`/pages/slug?=${slug}`);
+            const response = yield this.api.get(`/pages/slug?slug=${slug}`);
             return response.data;
         });
     }
